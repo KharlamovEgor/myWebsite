@@ -1,0 +1,84 @@
+:root {
+	--secondary: #9E8C6C;
+	--primary: #039B9B;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+.header {
+	background-image: url('../img/Path2Copy.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.header_header-content {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 50px 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header_avatar {
+	border-radius: 100%;
+	width: 350px;
+	height: 350px;
+	align-self: center;
+}
+
+.who-is-I_name {
+	font-family: 'Playfair Display', serif;
+	font-weight: 900;
+	line-height: 100px;
+	font-size: 126px;
+	margin: 30px 0;
+}
+
+.header_button {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	background-color: var(--primary);
+	color: #fff;
+	border: none;
+	padding: 10px 30px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.header_button:hover {
+	text-decoration: underline;
+}
+
+.yellow-text {
+	color: var(--secondary);
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1000px) {
+	.header_header-content {
+		flex-direction: column;
+		padding: 50px 5px;
+	}
+
+	.who-is-I_name {
+		font-size: 60px;
+		line-height: normal;
+		margin: 15px 0;
+	}
+}0
